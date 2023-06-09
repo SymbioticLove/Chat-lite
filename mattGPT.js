@@ -1,4 +1,5 @@
 const url = 'https://api.openai.com/v1/chat/completions';
+const apiKey = process.env.CAPI_KEY || '${{ secrets.CAPI_KEY }}';
 
 const form = document.querySelector('form');
 const promptInput = document.querySelector('#prompt');
@@ -44,7 +45,7 @@ function askMattGPT(prompt) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.CAPI_KEY}`
+            'Authorization': `Bearer ${apiKey}`
         },
         body: JSON.stringify({
             model: 'gpt-3.5-turbo',
