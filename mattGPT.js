@@ -15,6 +15,15 @@ form.addEventListener('submit', e => {
     }
 })
 
+fetch('secrets.CAPI_KEY')
+  .then(response => response.json())
+  .then(data => {
+    const apiKey = data.apiKey;
+    // Use the apiKey in your API request
+    askMattGPT(prompt, apiKey);
+  });
+
+
 function createMessageInstace(prompt) {
     chatLog.innerHTML +=
     `
@@ -44,7 +53,7 @@ function askMattGPT(prompt) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.CAPI_KEY}`
+            'Authorization': `Bearer ${apiKey}`
         },
         body: JSON.stringify({
             model: 'gpt-3.5-turbo',
