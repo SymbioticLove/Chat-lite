@@ -8,13 +8,12 @@
 }
 
 :root {
-    --dark-green: #193b1e;
-    --light-gray: #e4f0df;
+    --primary: #193b1e;
+    --secondary: #e4f0df;
 
-    --primary-bg: var(--light-gray);
+    --primary-bg: var(--secondary);
     --primary-text: #193b1e;
-    --user-message-bg: var(--dark-gray);
-    --user-message-color: var(--light-gray);
+    --user-message-color: var(--secondary);
     --accent: #01BAC3;
 
     --wrapper: 700px;
@@ -87,13 +86,13 @@ p.thinking {
     }
 }
 .prompt {
-    color: var(--dark-green);
+    color: var(--primary);
 }
 
 
 /* new message form */
 .new-message {
-    background-color: var(--dark-green);
+    background-color: var(--primary);
 }
 .new-message form {
     width: 100%;
