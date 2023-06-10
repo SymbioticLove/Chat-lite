@@ -1,5 +1,5 @@
 const url = 'https://api.openai.com/v1/chat/completions';
-const apiKey = process.env.CAPI_KEY;
+const apiKey = '';
 
 const form = document.querySelector('form');
 const promptInput = document.querySelector('#prompt');
