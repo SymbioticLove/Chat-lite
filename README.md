@@ -9,9 +9,6 @@ If you are a potential employer, please reach out to matthew@symbiotic.love to o
 <div>&nbsp</div>
 If you are an individual, you may obtain a free API key from OpenAI! Simply visit https://platform.openai.com/ and sign up for an account. Once you do, click on your profile in the top right corner and select
 "View API keys". Follow the steps to generate and copy one, and then paste it into line #2, between the single quotes --> const apiKey = '';.
-<div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  &nbspHERE^</div>
-  <div>&nbsp</div>
-  Once you have done this, simply open the index.html file, and everything should work as intended! Free API keys are limited to 3 requests per minute, so if it doesn't work, take a little break and come back in a few.
+<div>&nbsp</div>
+Once you have done this, simply open the index.html file, and everything should work as intended! Free API keys are limited to 3 requests per minute, so if it doesn't work, take a little break and come back in a few.
 
