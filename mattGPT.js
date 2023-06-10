@@ -1,4 +1,5 @@
 const url = 'https://api.openai.com/v1/chat/completions';
+const apiKey = '${{ secrets.CAPI_KEY }}';
 
 const form = document.querySelector('form');
 const promptInput = document.querySelector('#prompt');
@@ -14,15 +15,6 @@ form.addEventListener('submit', e => {
        promptInput.value = ''; 
     }
 })
-
-fetch('secrets.CAPI_KEY')
-  .then(response => response.json())
-  .then(data => {
-    const apiKey = data.apiKey;
-    // Use the apiKey in your API request
-    askMattGPT(prompt, apiKey);
-  });
-
 
 function createMessageInstace(prompt) {
     chatLog.innerHTML +=
@@ -67,7 +59,7 @@ function askMattGPT(prompt) {
         })
     })
     .then(res => res.json())
-    .then(data => updateMessage(data))
+    .then (data => updateMessage(data))
 }
 
 // scrolls chatlog to bottom
